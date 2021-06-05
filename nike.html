@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
 
@@ -73,24 +73,101 @@
         </div>
       </div><br/>
 
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-          <div class="card" style="width:400px">
-            <img class="card-img-top" src="shoes1.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-            </div>
-          </div>
-        </div>
-</div>
-      </div>
-
-
+      <button type="button" onclick="one()" class="btn btn-dark">Dark</button>
+      <button type="button" onclick="two()" class="btn btn-dark">Dark</button>
+      <button type="button" onclick="three()" class="btn btn-dark">Dark</button>
       
+
+        <div class="container" id="one1">
+          <div class="row">
+            <div class="col-md-12">
+
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="shoes1.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+              </div>
+            </div>
+
+          </div>
+          </div>
+        </div> 
+
+
+      <div class="container" id="two2" style="display: none;">
+          <div class="row">
+            <div class="col-md-12">
+
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="nike man.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+              </div>
+            </div>
+            
+          </div>
+          </div>
+        </div> 
+
+          
+      <div class="container" id="three3"  style="display: none;">
+          <div class="row">
+            <div class="col-md-12">
+
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="shoes1.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+              </div>
+            </div>            
+          </div>
+          </div>
+        </div> 
+
+
+
+
+        <!--SCRIPT START-->
+
+      <script>
+
+var x = document.getElementById("one1");
+
+function one() {
+ 
+ 
+  if (x.style.display === "none") {
+    x.style.display = "block";y.style.display = "none";z.style.display = "none";
+  } else {
+    x.style.display = "none";y.style.display = "none";z.style.display = "none";
+  }    
+}
+ var y = document.getElementById("two2");
+
+function two(){
+ if (y.style.display === "none") {
+    y.style.display = "block";x.style.display="none";z.style.display = "none";
+  } else {
+    y.style.display = "none";x.style.display="none";z.style.display = "none";
+  }
+}
+ var z = document.getElementById("three3");
+
+function three(){
+if (z.style.display === "none") {
+    z.style.display = "block";x.style.display="none";y.style.display = "none";
+  } else {
+    z.style.display = "none";x.style.display="none";y.style.display = "none";
+  }
+}
+
+      </script>
       
 </body>
 </html>
