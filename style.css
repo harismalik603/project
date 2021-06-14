@@ -21,8 +21,6 @@ body {
     height: auto;
 }
 
-#guccimain {
-    text-align: center;
-    color: white;
-    background-color: black;
+#gm {
+    height: min-content;
 }
